@@ -4,6 +4,7 @@ import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.List;
 
+import vo.OrderVO;
 import vo.PersonnelVO;
 
 public interface ManagePersonnelMessageService extends Remote{
@@ -60,4 +61,5 @@ public interface ManagePersonnelMessageService extends Remote{
 	 * @return 返回是否保存成功
 	 * */
 	public boolean savePassword(String personnelID,String password)throws RemoteException;
+
 }

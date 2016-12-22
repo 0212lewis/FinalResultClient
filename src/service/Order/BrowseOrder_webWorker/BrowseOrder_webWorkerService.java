@@ -33,5 +33,10 @@ public interface BrowseOrder_webWorkerService extends Remote{
      * */
     public List<OrderVO> getClientAbnormalOrders(String clientID)throws RemoteException;
     
-    
+    /**
+     * 
+     * @return
+     * @throws 得到所有的订单信息
+     */
+    public List<OrderVO> getAllOrders()throws RemoteException;
 }
